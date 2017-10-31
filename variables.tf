@@ -34,6 +34,11 @@ variable "ingress_rules" {
   default     = []
 }
 
+variable "ingress_rules_from_any" {
+  description = "List of ingress rules to create by name from 0.0.0.0/0"
+  default     = []
+}
+
 variable "ingress_cidr_blocks" {
   description = "List of IPv4 CIDR ranges to use on all ingress rules"
   default     = []
@@ -41,6 +46,11 @@ variable "ingress_cidr_blocks" {
 
 variable "egress_rules" {
   description = "List of egress rules to create by name"
+  default     = []
+}
+
+variable "egress_rules_to_any" {
+  description = "List of egress rules to create by name to 0.0.0.0/0"
   default     = []
 }
 
