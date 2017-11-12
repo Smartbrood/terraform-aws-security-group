@@ -3,11 +3,12 @@ variable "rules" {
   type        = "map"
 
   default = {
-    any            = [0, 0, "-1", "ANY"]
-    ssh-22-tcp     = [22, 22, "tcp", "HTTP"]
-    http-80-tcp    = [80, 80, "tcp", "HTTP"]
-    https-443-tcp  = [443, 443, "tcp", "HTTPS"]
-    ldap-389-tcp   = [389, 389, "tcp", "HTTP"]
+    any             = [0, 0, "-1", "ANY"]
+    icmp            = ["-1", "-1", "icmp", "ICMP"]
+    ssh-22-tcp      = [22, 22, "tcp", "HTTP"]
+    http-80-tcp     = [80, 80, "tcp", "HTTP"]
+    https-443-tcp   = [443, 443, "tcp", "HTTPS"]
+    ldap-389-tcp    = [389, 389, "tcp", "HTTP"]
   }
 }
 
