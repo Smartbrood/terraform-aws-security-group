@@ -9,6 +9,7 @@ variable "rules" {
     http-80-tcp     = [80, 80, "tcp", "HTTP"]
     https-443-tcp   = [443, 443, "tcp", "HTTPS"]
     ldap-389-tcp    = [389, 389, "tcp", "HTTP"]
+    mysql-3306-tcp  = [3306, 3306, "tcp", "MYSQL"]
   }
 }
 
